@@ -3,7 +3,7 @@
 #include <vector>
 #include <iostream>
 
-// this is just a comment
+// this is just a comment to test
 using namespace std;
 
 int getCharNumber(const char & c){
