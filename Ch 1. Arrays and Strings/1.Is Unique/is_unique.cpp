@@ -54,6 +54,7 @@ int main(){
 		for (auto word : words)
 		{
 			cout << word << string(": ") << boolalpha << isUniqueChars(word) <<endl;
+			cout << word << string(": ") << isUniqueChars(word) <<endl;
 		}
 		cout <<endl << "Using bit vector" <<endl;
 		for (auto word : words)
