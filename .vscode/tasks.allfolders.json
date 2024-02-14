@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build all C++ files",
+            "type": "shell",
+            "command": "/bin/bash",
+            "args": [
+                "-c",
+                "g++ -fdiagnostics-color=always -Wall -g $(find /home/yf23868/real_robotics_ws/cpp_course -name '*.cpp') -o /home/yf23868/real_robotics_ws/cpp_course/build/program"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
