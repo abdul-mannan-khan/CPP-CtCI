@@ -14,7 +14,8 @@ int* reverse_array(int *array, int n=0){
 		// cout << temp[i] << " ";
         array[i] = temp[i];
 	}
-    return array;
+    // return array;
+	return &array[0];
 
 }
 
@@ -28,7 +29,8 @@ int main (){
 	}
 	cout <<endl;
 
-	reverse_array(arr,n);
+	// reverse_array(arr,n);
+	reverse_array(&arr[0],n);
 
 	//Print the Output
 	for(int i=0; i<n; i++){

@@ -24,7 +24,7 @@ int main(){
 	
 	printArray(arr,n);
 	
-	cout <<"In Main "<<sizeof(arr) <<endl;
+	cout <<"In Main sizeof array is: "<< n <<endl;
 	for(int i=0;i<n;i++){
 		cout << arr[i] <<endl; 
 	}

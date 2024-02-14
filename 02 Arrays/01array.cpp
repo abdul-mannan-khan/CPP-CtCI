@@ -16,7 +16,7 @@ int main(){
 	cout << "===================================" << endl;
 	cout << "Enter the marks for each student:" << endl;
 	//Input
-	for(int i=0; i<=n; i++){
+	for(int i=0; i<n; i++){
 		// cout << i << endl;
 		cout << "Student " << (i) << ": ";
 		cin >> marks[i];
