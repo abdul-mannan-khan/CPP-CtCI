@@ -13,6 +13,9 @@ bool isUniqueChars(const string &str){
 		vector<bool> char_set(128);
 		for (int i = 0; i < str.length(); i++){
 			int val = str[i];
+			cout << str[i]<<endl;
+			cout << val<<endl;
+			cout << char_set[val]<<endl;
 			if (char_set[val]){
 				return false;
 			}
@@ -50,7 +53,7 @@ bool isUniqueChars_noDS( string str) {
 }
 
 int main(){
-		vector<string> words = {"abcde", "hello", "apple", "kite", "padle"};
+		vector<string> words = {"abccde", "hello", "apple", "kite", "padle"};
 		for (auto word : words)
 		{
 			cout << word << string(": ") << boolalpha << isUniqueChars(word) <<endl;
